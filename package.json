@@ -2,7 +2,8 @@
   "name": "ethers-simple-storage",
   "type": "module",
   "scripts": {
-    "compile": "solcjs --bin --abi --include-path node_modules/ --base-path . -o . SimpleStorage.sol"
+    "compile": "solcjs --bin --abi --include-path node_modules/ --base-path . -o . SimpleStorage.sol",
+    "postinstall": "typechain --target ethers-v6"
   },
   "dependencies": {
     "dotenv": "^16.3.1",
